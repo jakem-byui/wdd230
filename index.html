@@ -55,16 +55,6 @@
         <p>&copy;<span id="Year"></span> | Jake Matheson | Portland, OR, USA</p>
         <p id="lastModified"></p>
     </footer>
+    <script href="scripts/getdates.js" ></script>
 </body>
-<script>
-    const Year = document.querySelector('#Year');
-    const options = {
-		year: "numeric"
-	};
-    Year.innerHTML = new Date().toLocaleDateString("en-US", options);
-
-    const lastModified = document.querySelector('#lastModified');
-
-    lastModified.innerHTML = new Date(document.lastModified);
-</script>
 </html>
