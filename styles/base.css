@@ -1,0 +1,90 @@
+/* ---------------------- General Styles ---------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
+
+:root {
+    --primary-color: skyblue;
+    --secondary-color: lightgrey;
+    --accent1-color: black;
+  
+    --heading-font: "Jura";
+    --paragraph-font: "Roboto";
+}
+
+
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    z-index: -1;
+}
+
+
+
+header {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+}
+#profile-pic {
+    max-width: 150px;
+    border-radius: 25%;
+    grid-column: 2/3;
+}
+#profile-name {
+    grid-column: 3/5;
+}
+
+
+
+nav {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: grid;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 1em;
+}
+
+h3 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+
+
+
+main {
+    max-width: 900px;
+    display: grid;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+li {
+    list-style: none;
+}
+.card {
+    background-color: var(--secondary-color);
+    
+}
+
+
+
+footer {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+}
