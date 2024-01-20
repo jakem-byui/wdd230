@@ -52,8 +52,15 @@ header div {
 nav {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    display: flex;
+    flex-direction: row;
     padding: 1em;
+}
+nav ul {
+    display: flex;
+}
+}
+nav ul li {
+    flex: 1 1 100%;
 }
 a {
     text-decoration: none;

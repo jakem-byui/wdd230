@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
 
+@media (max-width: 799px) {
+
 :root {
     --primary-color: skyblue;
     --secondary-color: lightgrey;
@@ -24,23 +26,21 @@ body {
 header {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
-    text-align: center;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 header div {
-    grid-column: 1/2;
     margin-left: auto;
 }
 #profile-pic {
     max-width: 150px;
     border-radius: 25px;
+    padding: 1em;
 }
 #profile-name {
-    grid-column: 2/3;
     text-align: left;
-    padding: 0;
+    padding: 1em;
     margin: auto;
 }
 
@@ -49,9 +49,15 @@ header div {
 nav {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+nav a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
 }
 a {
     text-decoration: none;
@@ -62,7 +68,10 @@ a:hover {
     text-decoration: underline;
 }
 
-
+nav ul {
+	list-style-type: none;
+    margin: 0;
+}
 
 h1, h2, h3 {
     font-family: var(--heading-font);
@@ -112,4 +121,6 @@ footer {
     color: var(--secondary-color);
     text-align: center;
     padding: 10px;
+}
+
 }
