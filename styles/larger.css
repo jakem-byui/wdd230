@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
 
+@media (min-width: 800px) {
+ 
+/* ---------------------- General Styles ---------------------- */
+
 :root {
     --primary-color: skyblue;
     --secondary-color: lightgrey;
@@ -25,25 +29,22 @@ header {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
     text-align: center;
-
+    padding: 5px;
+    align-items: center; 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 header div {
-    grid-column: 1/2;
+    grid-column: 2/3;
     margin-left: auto;
 }
 #profile-pic {
     max-width: 150px;
     border-radius: 25px;
-    scale: 80%;
 }
 #profile-name {
-    grid-column: 2/3;
+    grid-column: 3/5;
     text-align: left;
-    scale: 80%;
-    padding: 0;
-    margin: auto;
 }
 
 
@@ -52,13 +53,12 @@ nav {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
-    flex-wrap: wrap;
     padding: 1em;
 }
 a {
     text-decoration: none;
     color: var(--accent1-color);
-    margin: 1em;
+    margin: auto;
 }
 a:hover {
     text-decoration: underline;
@@ -83,6 +83,7 @@ h3 {
 main {
     max-width: 900px;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 1em 2.5em 5em 2.5em;
     margin-left: auto;
     margin-right: auto;
@@ -90,8 +91,15 @@ main {
 #subtitle {
     padding: 0px;
     text-decoration: underline;
+    grid-column: 1/5;
 }
+#learningCard {
+    grid-column: 1/3;
+}
+#infoCard {
+    grid-column: 3/5;
 
+}
 main div {
     border-style: groove;
     border-radius: 25px;
@@ -114,4 +122,6 @@ footer {
     color: var(--secondary-color);
     text-align: center;
     padding: 10px;
+}
+
 }
