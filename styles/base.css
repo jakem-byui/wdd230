@@ -36,12 +36,10 @@ header div {
 #profile-pic {
     max-width: 150px;
     border-radius: 25px;
-    scale: 80%;
 }
 #profile-name {
     grid-column: 2/3;
     text-align: left;
-    scale: 80%;
     padding: 0;
     margin: auto;
 }
