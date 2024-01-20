@@ -58,7 +58,6 @@ nav {
 nav ul {
     display: flex;
 }
-}
 nav ul li {
     flex: 1 1 100%;
 }
