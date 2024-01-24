@@ -51,7 +51,7 @@ main {
     margin-right: auto;
 }
 
-main div {
+main section {
     border-style: groove;
     border-radius: var(--rounded-corners);
     background-color: var(--secondary-color);
@@ -59,7 +59,7 @@ main div {
     max-width: 100%;
 }
 
-main div h3 {
+main section h3 {
     border-radius: 25px;
     color:  white;
     background-color: var(--accent1-color);
@@ -69,11 +69,11 @@ main div h3 {
     max-width: 100%;
 }
 
-main div p {
+main section p {
     margin-left: 5px;
 }
 
-main div img {
+main section img {
     max-width: 100%;
 }
 
