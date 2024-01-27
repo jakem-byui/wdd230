@@ -123,14 +123,13 @@ h3 {
 	font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
+/* the button! */
 .open a {
+    content: "";
 	display: block;
 }
 
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
+
 
 
 
@@ -145,6 +144,7 @@ main {
 #subtitle {
     padding: 0px;
     text-decoration: underline;
+    color: var(--accent1-color);
 }
 
 main div {
@@ -165,6 +165,15 @@ main div h3 {
 main a {
     margin: 0;
 }
+
+.cardHeader:hover::before, .cardHeader:hover::after {
+    content: "-";
+}
+
+
+
+
+
 iframe  {
     border-radius: 15px;
     border-style: none;
