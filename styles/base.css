@@ -2,12 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
 
-@media (max-width: 799px) {
+@media (max-width: 899px) {
 
 :root {
-    --primary-color: skyblue;
-    --secondary-color: whitesmoke;
-    --accent1-color: black;
+    --primary-color: #7172A8;
+    --secondary-color: #EDE5E6;
+    --accent1-color: #181D4E;
+    --accent2-color: #632B30;
   
     --heading-font: "Jura";
     --paragraph-font: "Roboto";
@@ -61,11 +62,12 @@ nav a {
 }
 a {
     text-decoration: none;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     margin: 1em;
 }
 a:hover {
     text-decoration: underline;
+    color: var(--accent2-color);
 }
 
 nav ul {
@@ -84,6 +86,54 @@ h3 {
     color: var(--secondary-color);
 }
 
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
 
 
 
@@ -100,17 +150,24 @@ main {
 }
 
 main div {
-    border-style: groove;
-    border-radius: 25px;
-    background-color: var(--secondary-color);
+    box-shadow: 5px 10px 15px;
+    border-radius: 15px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     margin: 5px;
 }
 li {
     list-style: none;
 }
 main div h3 {
-    border-radius: 25px;
+    border-radius: 15px;
     margin: 5px;
+}
+iframe  {
+    border-radius: 15px;
+    border-style: none;
+    width: 100%;
+    height: 400px;
 }
 
 

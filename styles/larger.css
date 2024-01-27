@@ -2,14 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
  
 /* ---------------------- General Styles ---------------------- */
 
 :root {
-    --primary-color: skyblue;
-    --secondary-color: lightgrey;
-    --accent1-color: black;
+    --primary-color: #7172A8;
+    --secondary-color: #EDE5E6;
+    --accent1-color: #181D4E;
+    --accent2-color: #632B30;
   
     --heading-font: "Jura";
     --paragraph-font: "Roboto";
@@ -62,13 +63,17 @@ nav ul li {
     flex: 1 1 100%;
 }
 a {
-    text-decoration: none;
-    color: var(--accent1-color);
-    margin: auto;
+    color: var(--secondary-color);
+    margin: 1em;
 }
 a:hover {
-    text-decoration: underline;
+    color: var(--accent2-color);
 }
+#menu {
+    display: none; /* hide hamburger button */
+}
+
+
 
 
 
@@ -89,7 +94,7 @@ h3 {
 main {
     max-width: 900px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 1em 2.5em 5em 2.5em;
     margin-left: auto;
     margin-right: auto;
@@ -97,27 +102,37 @@ main {
 #subtitle {
     padding: 0px;
     text-decoration: underline;
-    grid-column: 1/5;
+    grid-column: 1/6;
 }
 #learningCard {
-    grid-column: 1/3;
+    grid-column: 1/4;
 }
 #infoCard {
-    grid-column: 3/5;
-
+    grid-column: 4/6;
+}
+#mapCard {
+    grid-column: 1/6;
+    padding: 10px;
 }
 main div {
-    border-style: groove;
-    border-radius: 25px;
-    background-color: var(--secondary-color);
+    box-shadow: 5px 10px 15px;
+    border-radius: 15px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     margin: 5px;
 }
 li {
     list-style: none;
 }
 main div h3 {
-    border-radius: 25px;
+    border-radius: 15px;
     margin: 5px;
+}
+iframe  {
+    border-radius: 15px;
+    border-style: none;
+    width: 100%;
+    height: 400px;
 }
 
 
