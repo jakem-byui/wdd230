@@ -5,8 +5,9 @@
 @media (max-width: 809px) {
 
 :root {
-    --primary-color: #7172A8;
+    --primary-color: #5D5D89;
     --secondary-color: #EDE5E6;
+    --white: white;
     --accent1-color: #181D4E;
     --accent2-color: #632B30;
   
@@ -26,7 +27,7 @@ body {
 
 header {
     background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    color: var(--white);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -35,9 +36,10 @@ header div {
     margin-left: auto;
 }
 #profile-pic {
-    max-width: 150px;
+    width: 100px;
     border-radius: 25px;
     padding: 5px;
+    margin-left: auto;
 }
 #profile-name {
     text-align: left;
@@ -49,7 +51,7 @@ header div {
 
 nav {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--white);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -62,8 +64,7 @@ nav a {
     margin: 0px;
 }
 a {
-    text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--white);
 }
 a:hover {
     text-decoration: underline;
@@ -82,15 +83,14 @@ h1, h2, h3 {
 }
 
 h3 {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    color: var(--white);
 }
 
 #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: var(--secondary-color);
+	color: var(--white);
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -115,11 +115,11 @@ h3 {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: var(--white);
 }
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
+	color: var(--accent2-color);
+    text-decoration: underline;
 	font-weight: 700;
 }
 
@@ -150,8 +150,8 @@ main {
 main div {
     box-shadow: 5px 10px 15px;
     border-radius: 15px;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: var(--white);
+    background-color: var(--accent1-color);
     margin: 5px;
 }
 li {
@@ -177,7 +177,7 @@ iframe  {
 
 footer {
     background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    color: var(--white);
     text-align: center;
     padding: 10px;
 }
