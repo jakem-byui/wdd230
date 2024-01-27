@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
 
-@media (max-width: 899px) {
+@media (max-width: 809px) {
 
 :root {
     --primary-color: #7172A8;
@@ -37,11 +37,11 @@ header div {
 #profile-pic {
     max-width: 150px;
     border-radius: 25px;
-    padding: 1em;
+    padding: 5px;
 }
 #profile-name {
     text-align: left;
-    padding: 1em;
+    padding: 5px;
     margin: auto;
 }
 
@@ -59,11 +59,11 @@ nav a {
 	display: block;
 	text-align: center;
 	text-decoration: none;
+    margin: 0px;
 }
 a {
     text-decoration: none;
     color: var(--secondary-color);
-    margin: 1em;
 }
 a:hover {
     text-decoration: underline;
@@ -90,7 +90,7 @@ h3 {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: var(--secondary-color);
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -108,8 +108,6 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: #333;
-	color: #fff;
 }
 
 .navigation a {
@@ -161,7 +159,11 @@ li {
 }
 main div h3 {
     border-radius: 15px;
+    padding: 10px;
     margin: 5px;
+}
+main a {
+    margin: 0;
 }
 iframe  {
     border-radius: 15px;

@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
 
-@media (min-width: 900px) {
+@media (min-width: 810px) {
  
 /* ---------------------- General Styles ---------------------- */
 
@@ -54,7 +54,7 @@ nav {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     flex-direction: row;
-    padding: 1em;
+    padding: 0.25em;
 }
 nav ul {
     display: flex;
@@ -64,13 +64,13 @@ nav ul li {
 }
 a {
     color: var(--secondary-color);
-    margin: 1em;
+    margin: 0px;
 }
 a:hover {
     color: var(--accent2-color);
 }
 #menu {
-    display: none; /* hide hamburger button */
+    display: none;
 }
 
 
@@ -100,6 +100,7 @@ main {
     margin-right: auto;
 }
 #subtitle {
+    color: var(--accent1-color);
     padding: 0px;
     text-decoration: underline;
     grid-column: 1/6;
