@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --primary-color: #056C37;
+    --secondary-color: #3f3f3f;
+    --white: white;
+    --black: black;
+    --accent-color: #94CE24;
+  
+    --regular-font: "Roboto";
+    --italic-font: '';
+    /*--bold-font: "OpenSans-Bold-webfont";
+    --light-font: '.roboto-light'; */
+    
+}
+
+body {
+    font-family: "";
+}
+
+/* header */
+
+header {
+    color: var(--white);
+    display: flex;
+    background-color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+main {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    border-style:solid;
+}
+
+main section h3 {
+    font-family: var(--italic-font);
+    padding: 5px;
+}
+
+/* Color Schema */
+
+#colorSchema {
+    display: grid;
+    text-align: center;
+}
+#colorSchema > div{
+    padding: 50px;
+    margin: 5px;
+    border-style: groove;
+}
+#color1 {
+    background-color: var(--primary-color);
+    grid-column: 1/2;
+    color: var(--white);
+}
+#color2 {
+    background-color: var(--secondary-color);
+    grid-column: 2/3;
+    color: var(--white);
+}
+#color3 {
+    background-color: var(--accent-color);
+    grid-column: 3/4;
+}
+
+/* typography */
+
+#typography {
+    display: grid;
+    text-align: center;
+}
+#typography > p{
+    padding: 25px;
+    margin: 5px;
+    border-style: groove;
+    font-size: xx-large
+}
+#rFont {
+    background-color: var(--primary-color);
+    grid-column: 1/2;
+    color: var(--white);
+    font-family: var(--regular-font);
+}
+#iFont {
+    background-color: var(--secondary-color);
+    grid-column: 2/3;
+    color: var(--white);
+}
+#bFont {
+    background-color: var(--accent-color);
+    grid-column: 3/4;
+}
+
+/* wireframe */
+
+#wireframe > img{
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 5px;
+}
