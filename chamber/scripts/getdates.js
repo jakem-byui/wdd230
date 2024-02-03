@@ -1,6 +1,6 @@
 const Year = document.querySelector('#Year');
 const options = {
-year: "numeric"
+    year: "numeric"
 };
 Year.innerHTML = new Date().toLocaleDateString("en-US", options);
 
