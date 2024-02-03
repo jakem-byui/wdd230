@@ -29,10 +29,26 @@ header {
     align-items: center;
     justify-content: center;
     padding: 5px;
+    max-height: 100px;
 }
 header img {
     max-width: 100%;
 }
+
+#title {
+    justify-content: center;
+    text-align: center;
+}
+#title h1 {
+    margin: 0px;
+    padding: 0px;
+    /* text-wrap: none; */
+}
+#title h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 /* nav */
 
