@@ -42,11 +42,8 @@ header img {
 #title h1 {
     margin: 0px;
     padding: 0px;
+    font-size: 2rem;
     /* text-wrap: none; */
-}
-#title h3 {
-    margin: 0px;
-    padding: 0px;
 }
 
 
