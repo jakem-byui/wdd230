@@ -6,9 +6,9 @@
     <title>JM - WDD 230 - Bethany OR Chamber of Commerce Site Plan</title>
     <meta name="description" content="WDD 230 - Web Frontend Development | JM | Bethany OR Chamber of Commerce Site Plan">
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="bethany-oregon-icon-removebg-preview.ico">
     <meta name="author" content="Jake Matheson (JM)">
     <meta property="og:title" content="JM | WDD230 Assignments | Bethany OR Chamber of Commerce Site Plan">
@@ -20,7 +20,7 @@
     <header>
         <img src="images/bethany-oregon-logo-removebg-preview.png" alt="Bethany Oregon COC Logo">
         <div id="title">
-            <h1>Bethany Oregon | Chamber of Commerce</h1>
+            <h1>Bethany Oregon<br>Chamber of Commerce</h1>
         </div>
     </header>
     <nav>
@@ -38,7 +38,7 @@
     </nav>
     <div id="hero-banner">
         <img id="hero-image" src="images/bethany-hero.webp" alt="Picture of a street corner in Bethany">
-        <h2 id="hero-call">Join the Chamber</h2>
+        <button id="hero-call">Join the Chamber</button>
     </div>   
     <main>
 
@@ -66,19 +66,20 @@
         </section>
     </main>
     <footer>
-        <section id="contactInfo">
+        <div id="contactInfo">
             <img src="images/bethany-oregon-logo-removebg-preview.png" alt="Bethany Oregon COC Logo">
             <div id="addressInfo">
-                <p>Bethany, Oregon<br>Chamber of Commerce</p> 
+                <h4>Bethany OR Chamber<br>Contact Info</h4>
                 <p>1000 Bethany Blvd<br>Bethany, OR 97229</p>
             </div>
             <div id="teleInfo">
                 <a href = "mailto:info@this_is_fake.org">info@bethany.org</a>
                 <p>(503) 555-5555</p>
             </div>
-        </section>
+        </div>
         <p>&copy;<span id="Year"></span> Bethany Chamber | Jake Matheson | WDD 230 Project | <span id="lastModified"></span></p>
     </footer>
     <script src="../scripts/getdates.js" ></script>
+    <script src="scripts/hamburgermenu.js"></script>
 </body>
 </html>

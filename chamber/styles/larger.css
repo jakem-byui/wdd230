@@ -26,13 +26,12 @@ header {
     color: var(--white);
     display: flex;
     background-color: var(--secondary-color);
-    align-items: center;
+    padding: 5px; 
     justify-content: center;
-    padding: 5px;
-    max-height: 100px;
+    align-items: center;
 }
 header img {
-    max-width: 100%;
+    max-height: 100px;
 }
 
 #title {
@@ -42,8 +41,8 @@ header img {
 #title h1 {
     margin: 0px;
     padding: 0px;
-    font-size: 2rem;
-    /* text-wrap: none; */
+    font-size: clamp(1rem, 10vw, 1.5rem);
+    white-space: nowrap;
 }
 
 
@@ -53,8 +52,6 @@ nav {
     display: flex;
     justify-content: center;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     background-color: var(--primary-color);
 }
@@ -77,52 +74,9 @@ a:hover {
     text-decoration: overline;
 }
 
-button {
+button#menu {
     display: none;
 }
-
-
-/* #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: var(--white);
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "X";
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-}
-
-.navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: var(--white);
-}
-.navigation a:hover {
-	color: var(--accent2-color);
-    text-decoration: underline;
-	font-weight: 700;
-}
-
-/* .open a {
-    content: "";
-	display: block;
-} */
 
 /* hero image */
 
@@ -140,6 +94,7 @@ button {
     grid-column:1/4;
     grid-row: 1/4;
     max-width: 100%;
+    z-index: -1;
 }
 
 #hero-call{
@@ -153,7 +108,7 @@ button {
 
 #hero-call:hover {
     color: var(--accent-color);
-    scale: 1.2;
+    transform: scale(1.2);
     transition: 10ms;
 }
 
@@ -196,6 +151,14 @@ main section {
 
 }
 
+#weatherCard, #eventsCard, #spotlightCard h3{
+    text-shadow: 1px 1px 5px #3f3f3f;
+}
+
+#weatherCard, #eventsCard, #spotlightCard p{
+    text-shadow: 1px 1px 5px #3f3f3f;
+}
+
 .spotlight {
     padding-right: 25px;
     flex-grow: 1;
@@ -218,6 +181,11 @@ main section {
 #addressInfo {
     padding: 10px;
     text-align: left;
+}
+
+#addressInfo h4 {
+    margin: 0px;
+    padding: 0px;
 }
 
 #addressInfo p {
