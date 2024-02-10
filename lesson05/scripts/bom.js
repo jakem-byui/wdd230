@@ -7,13 +7,14 @@ const list = document.querySelector('#list');
 const error = document.createElement('section');
 
 //populate the error message section with text
-error.textContent = 'Please enter a chapter to add, and click Add Chapter again.';
+error.textContent = "Please enter a chapter to add, and click 'Add Chapter' again.";
 
 //set the style for the error message
-error.style.color = 'red';
-error.style.border = 'solid';
-error.style.backgroundColor = 'white';
+error.style.color = 'black';
+error.style.border = 'dotted';
+error.style.backgroundColor = 'orange';
 error.style.display = 'none';
+error.style.padding = '5px';
 
 //append the error message section to the main element
 document.querySelector('main').append(error);
