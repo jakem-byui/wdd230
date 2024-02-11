@@ -23,6 +23,11 @@
             <h1>Bethany Oregon<br>Chamber of Commerce</h1>
         </div>
     </header>
+    <!-- Rectangular switch -->
+    <label class="switch">
+        <input type="checkbox" onclick="myFunction()">
+        <span class="slider"></span>
+    </label>
     <nav>
         <button id="menu" title="hamburger menu"></button>
         <ul class="navigation">
@@ -81,5 +86,11 @@
     </footer>
     <script src="../scripts/getdates.js" ></script>
     <script src="scripts/hamburgermenu.js"></script>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
