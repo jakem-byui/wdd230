@@ -131,11 +131,46 @@ h3 {
 
 
 
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+    max-width: 100%;
 
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    border-radius: 15px;
+}
+
+.herolabel {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: rgba(0,0,0,.75);
+	border: 1px solid rgba(0,0,0,.75);
+    border-radius: 15px;
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+    white-space: nowrap;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+
+}
 
 
 main {
-    max-width: 900px;
+    max-width: 960px;
     display: grid;
     padding: 1em 2.5em 5em 2.5em;
     margin-left: auto;
@@ -147,7 +182,7 @@ main {
     color: var(--accent1-color);
 }
 
-main div {
+main div, main section {
     box-shadow: 5px 10px 15px;
     border-radius: 15px;
     color: var(--white);
@@ -157,7 +192,7 @@ main div {
 li {
     list-style: none;
 }
-main div h3 {
+main div h3, main section h3 {
     border-radius: 15px;
     padding: 10px;
     margin: 5px;
