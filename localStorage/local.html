@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage Example</title>
+    <link rel="stylesheet" href="local.css">
+</head>
+<body>
+    <header>
+        <h1>Local Storage Example Page</h1>
+    </header>
+    <main>
+        <h2>What is Local Storage?</h2>
+        <ul>
+            <li>
+                Local Storage is a web storage solution 
+                provided by web browsers to store data 
+                persistently on a user's device. Unlike 
+                session storage, local storage retains 
+                data even when the browser is closed and 
+                reopened.
+            </li>
+            <li>
+                Local Storage is similar to sessionStorage, 
+                except that while localStorage data has 
+                no expiration time, sessionStorage data 
+                gets cleared when the page session ends — 
+                that is, when the page is closed. (localStorage 
+                data for a document loaded in a "private 
+                browsing" or "incognito" session is cleared 
+                when the last "private" tab is closed.)
+                <br>Reference: 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage</a></li>
+        </ul>
+        <p><span class="question">How do I access Local Storage?</span><br>
+            Local storage is accessible in any window or 
+            tab that is open to your site. This means if 
+            you store some data in local storage on one 
+            tab of your browser that same local storage 
+            data will be available on all other tabs and 
+            windows you have open to that site.</p>
+        <div class="codeWrapper">
+            <code>
+                // Storing data<br>
+                localStorage.setItem('username', 'JohnDoe');<br>
+                <br>
+                // Retrieving data<br>
+                const username = localStorage.getItem('username');<br>
+                console.log(username); // Outputs: JohnDoe
+
+            </code>            
+        </div>
+        <p><span class="question">How long does Local Storage last?</span><br>
+            Once you store data in local storage it will 
+            stay there until you manually remove it or 
+            the user manually removes it.</p>
+        <h2>Great Resources:</h2>
+        <ul>
+            <li>
+                <a href="https://blog.webdevsimplified.com/2020-08/cookies-localstorage-sessionstorage/">WebDevSimplified Blog</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">mdn web docs</a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy;<span id="Year"></span> | Jake Matheson | Portland, OR, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="local.js"></script>
+    <script src="../scripts/getdates.js"></script>
+</body>
+</html>

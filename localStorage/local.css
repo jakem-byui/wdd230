@@ -1,0 +1,40 @@
+body {
+    max-width: 960px;
+    font-size: 1.2rem;
+    margin: auto;
+    background-color:white;
+}
+header {
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    padding: 5px;
+}
+
+main {
+    padding: 25px;
+}
+
+footer {
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+li{
+    padding-bottom: 15px;
+}
+
+.codeWrapper {
+    background-color: black;
+    color: chartreuse;
+    padding: 25px;  
+}
+
+.question {
+    font-style: italic;
+}
