@@ -42,18 +42,33 @@
         </ul>
     </nav>
     <div id="hero-banner">
-        <img id="hero-image" src="images/bethany-hero.webp" alt="Picture of a street corner in Bethany">
+        <picture id="hero-image">
+            <img 
+                srcset="
+                    images/temp-hero-img-small.webp 400w,
+                    images/temp-hero-img-medium.webp 810w,
+                    images/temp-hero-img-large.webp 960w"
+                sizes="
+                    (max-width: 400px) 400px,
+                    (max-width: 810px) 810px,
+                    960px"
+                src="images/temp-hero-img-large.webp" 
+                alt="Temp hero image week 6 - picture of a team meeting">
+        </picture>
         <button id="hero-call">Join the Chamber</button>
     </div>   
     <main>
-
         <section id="eventsCard">
             <h3>Upcoming Events</h3>
             <p>content content</p>
         </section>
         <section id="weatherCard">
             <h3>Weather</h3>
-            <p>content content</p>
+            <p>
+                Temperature: <span id="temperature">49</span>° F | 
+                Wind speed: <span id="wind-speed">2</span> | 
+                Wind Chill: <span id="wind-chill"></span> 
+            </p>
         </section>
         <section id="spotlightCard">
             <div class="spotlight">
@@ -86,6 +101,7 @@
     </footer>
     <script src="../scripts/getdates.js" ></script>
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script>
         function myFunction() {
            var element = document.body;
