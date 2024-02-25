@@ -48,4 +48,40 @@
         content: "";
         display: block;
     }
+
+
+    /* Discover Page Styling */
+
+
+    #discoverMain {
+        display: flex;
+    }
+    
+    h2 {
+        color: var(--white);
+        background-color: var(--secondary-color);
+        padding: 10px 50px;
+        max-width: 100%;
+        border-radius: 0px 15px 0px 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 10px 15px var(--secondary-color);
+    }
+    
+    /* #discoverInfo {
+
+    }
+    
+    #discoverPic {
+
+    }
+    
+    #discoverCal {
+
+    }
+    
+    #discoverWithPics {
+
+    } */
 }
