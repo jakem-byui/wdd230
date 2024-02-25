@@ -339,5 +339,10 @@ h2 {
 }
 
 .discoverPics {
-	object-fit: cover;
+	max-width: 400px;
+}
+
+.discoverImages:hover {
+    transform: scale(1.2);
+    transition: 10ms;
 }
