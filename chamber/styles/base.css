@@ -83,4 +83,8 @@
     #discoverWithPics {
 
     } */
+
+    .discoverImages:hover {
+        transform: none;
+    }
 }
