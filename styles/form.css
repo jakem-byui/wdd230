@@ -1,0 +1,29 @@
+* {
+    --required: red;
+    --input-height: 30px;
+    --text-alignment: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    padding: 1em;
+    text-align: var(--text-alignment);
+}
+
+form label input {
+    display: block;
+}
+
+form input {
+    padding: 1em;
+    margin: 1em;
+}
+
+.required {
+    color: var(--required);
+}
