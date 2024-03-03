@@ -44,31 +44,47 @@
     </nav>
     <main>
 
-        <form method="get" action="record.html">
+        <section>
 
-            <label for="username" class="required">*Username: <input type="text" id="username" placeholder="username" required></label>
+            <h2>This An Example Form</h2>
+            <p class="required"> Indicates a required field</p>
 
-            <label for="password" class="required">*Password: <input type="password" id="Password" placeholder="password" minlength="8" pattern="[A-Za-z0-9]" required></label>
-            
-            <label for="confirmPassword" class="required">*Confirm Password: <input type="text" id="confirmPassword" placeholder="confirm password" required></label>
-            
-            <label for="email" class="required">*Email: <input type="email" id="email" placeholder="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
-            
-            <label for="pageRating">Page Rating: <input type="range" id="pageRating" min="0" max="10" step="1" placeholder="Rate Page"></label>
+            <div id="formmessage"></div>
 
-            <input type="reset">
-            <input type="submit" value="Submit">
+            <form method="get" action="record.html">
 
-        </form>
+                <label for="username" class="required">Username: </label>
+                <input type="text" id="username" name="username" placeholder="username" required>
+
+                <label for="password" class="required">Password: </label>
+                <input type="text" id="password" name="password" placeholder="eight character password" pattern="[A-Za-z0-9]{8,}" required>
+
+                <label for="reenterPassword" class="required">Re-enter Password: </label>
+                <input type="text" id="reenterPassword" name="reenterPassword" required>
+
+                <label for="email" class="required">Email: </label>
+                <input type="email" id="email" name="email" placeholder="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+
+                <label for="pageRating">Page Rating: </label>
+                <input type="range" id="pageRating" min="1" max="10" step="1" placeholder="Rate Page">
+
+                <input type="reset" value="Clear Example Form">
+                <input type="submit" value="Create Example Account">
+
+            </form>
+        </section>
+
+        
 
     </main>
     <footer>
-        <p>&copy;<span id="Year"></span> | Jake Matheson | Portland, OR, USA</p>
+        <p>&copy;<span id="Year"></span> | Jake Matheson | Portland, OR, USA </p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/visittracker.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
