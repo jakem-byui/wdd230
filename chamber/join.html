@@ -39,6 +39,108 @@
     </nav>
     <main>
 
+        <section>
+
+            <h2>Join the Chamber</h2>
+
+            <p class="required"> Indicates a required field</p>
+
+            <div id="formmessage"></div>
+
+            <form method="get" action="record.html" id="chamberForm">
+
+                <label for="firstName" class="required">
+                    First Name: 
+                    <input 
+                        type="text" 
+                        id="firstName" 
+                        name="firstName" 
+                        placeholder="First Name" 
+                        required>
+                </label>
+
+                <label for="lastName" class="required">
+                    Last Name: 
+                    <input 
+                        type="text" 
+                        id="lastName" 
+                        name="lastName" 
+                        placeholder="Last Name" 
+                        required>
+                </label>
+
+                <label for="titlePos" class="required">
+                    Title or Position in Organization: 
+                    <input 
+                        type="text" 
+                        id="titlePos" 
+                        name="titlePos" 
+                        placeholder="Title or Position" 
+                        required>
+                </label>
+                
+                <label for="email" class="required">
+                    Email: 
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="ex. email@byui.edu" 
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" 
+                        title="Please enter a valid email address" 
+                        required>
+                </label>
+
+                <label for="phone" class="required">
+                    Mobile Phone: 
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="ex. 555-555-5555" 
+                        required>
+                </label>
+
+                <label for="orgName" class="required">
+                    Business/Organization Name: 
+                    <input 
+                        type="text" 
+                        id="orgName" 
+                        name="orgName" 
+                        placeholder="Org Name" 
+                        required>
+                </label>
+                
+                <div id="membershipInfo">
+                    <p>Select Membership Levels</p>
+                    <ul>
+                        <li>🆓 <span>NP Membership</span>: Ideal for non-profit organizations, this membership level offers exclusive benefits and privileges with no associated fees.</li>
+                        <li>🥉 <span>Bronze Membership</span>: Unlock basic privileges and access exclusive content with our Bronze Membership. Perfect for getting started with our community.</li>
+                        <li>🥈 <span>Silver Membership</span>: Elevate your experience with Silver Membership, offering enhanced benefits, increased access, and special features for a more enriched membership.</li>
+                        <li>🥇 <span>Gold Membership</span>: Experience the pinnacle of membership with Gold status. Enjoy premium perks, priority access, and exclusive opportunities, making your journey with us truly exceptional.</li>
+                    </ul>
+                </div>
+
+                <select name="membershipLevel" id="membershipLevel">
+                    <option value="defaultSelect"> -Select a membership level- </option>
+                    <option value="NPmem">Non-Profit Membership</option>
+                    <option value="bronzeMem">Bronze Membership</option>
+                    <option value="silverMem">Silver Membership</option>
+                    <option value="goldMem">Gold Membership</option>
+                </select>
+                
+                <input 
+                    type="reset" 
+                    value="Clear Fake Form">
+
+                <input 
+                    type="submit" 
+                    value="Fake Application Submit">
+
+            </form>
+
+        </section>
+
     </main>
     <footer>
         <div id="contactInfo">
@@ -58,5 +160,6 @@
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>

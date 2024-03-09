@@ -87,4 +87,11 @@
     .discoverImages:hover {
         transform: none;
     }
+
+
+    /* Join the Chamber Form */
+    #chamberForm {
+        display: grid;
+    }
+
 }
