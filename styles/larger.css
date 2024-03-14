@@ -155,6 +155,7 @@ main {
 }
 #infoCard {
     grid-column: 4/6;
+    text-align: center;
 }
 #mapCard {
     grid-column: 1/6;
