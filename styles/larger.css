@@ -156,7 +156,16 @@ main {
 #infoCard {
     grid-column: 4/6;
     text-align: center;
+    
 }
+figcaption {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant:small-caps;
+    font-size: larger;
+}
+
+
 #mapCard {
     grid-column: 1/6;
     padding: 10px;

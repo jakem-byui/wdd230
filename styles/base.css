@@ -205,8 +205,15 @@ main a {
     content: "-";
 }
 
-
-
+#infoCard {
+    text-align: center;
+}
+figcaption {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant:small-caps;
+    font-size: larger;
+}
 
 
 iframe  {
