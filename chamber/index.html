@@ -17,6 +17,9 @@
     <meta property="og:image" content="https://media.oregonlive.com/homes-rentals/photo/hr26bethany031jpg-2b5c03ad1c261e3a.jpg">
 </head>
 <body>
+    <div id="banner">
+        <p>Attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m. <button id="closeBanner">❌</button></p>
+    </div>
     <header>
         <img src="images/bethany-oregon-logo-removebg-preview.webp" alt="Bethany Oregon COC Logo">
         <div id="title">
@@ -65,6 +68,11 @@
                 Wind Speed: <span id="wind-speed">5</span>mph | 
                 Wind Chill: <span id="wind-chill"></span> 
             </p>
+            <p>Bethany, Oregon - Temperature: <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
         </section>
         <section id="spotlightCard">
             <div class="spotlight">
@@ -99,5 +107,7 @@
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

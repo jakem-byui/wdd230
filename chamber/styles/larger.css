@@ -218,6 +218,12 @@ main section {
     padding-right: 25px;
 
 }
+figcaption {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant:small-caps;
+    font-size: larger;
+}
 
 #spotlightCard {
     display: flex;
@@ -386,4 +392,15 @@ h2 {
 }
 #membershipInfo span {
     font-weight: bold;
+}
+
+
+
+/* banner message */
+
+#banner {
+    display: none; 
+    border: var(--accent-color) solid 3px;
+    padding: 5px;
+    text-align: center;
 }
