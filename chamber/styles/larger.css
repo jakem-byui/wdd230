@@ -378,6 +378,7 @@ h2 {
     transition: 10ms;
 }
 
+
 /* Join the Chamber Form */
 #chamberForm {
     display: flex;
@@ -422,8 +423,6 @@ h2 {
 #membershipInfo span {
     font-weight: bold;
 }
-
-
 
 /* banner message */
 
