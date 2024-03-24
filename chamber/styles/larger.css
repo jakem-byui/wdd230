@@ -146,6 +146,13 @@ button#menu {
     display: none;
 }
 
+.currentPage::before {
+    content: "◖";
+}
+.currentPage::after {
+    content: "◗";
+}
+
 /* hero image */
 
 #hero-banner {
@@ -223,10 +230,15 @@ main section {
     padding-right: 25px;
 
 }
+
+/* #eventsCard {
+    text-align: left;
+} */
+
 figcaption {
     text-decoration: underline;
     font-family: Arial, Helvetica, sans-serif;
-    font-variant:small-caps;
+    font-variant: small-caps;
     font-size: larger;
 }
 
@@ -234,17 +246,17 @@ figcaption {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
-#weatherCard,
-#eventsCard,
-#spotlightCard h3 {
+#weatherCard h3,
+#eventsCard h3,
+#memberCard h3 {
     text-shadow: 1px 1px 5px #3f3f3f;
+    text-decoration: underline;
 }
 
-#weatherCard,
-#eventsCard,
+#weatherCard p,
+#eventsCard p,
 #spotlightCard p {
     text-shadow: 1px 1px 5px #3f3f3f;
 }
@@ -252,6 +264,14 @@ figcaption {
 .spotlight {
     padding-right: 25px;
     flex-grow: 1;
+    max-width: 200px;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+}
+
+#spotlightCard section {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* contact info */
@@ -350,7 +370,7 @@ h2 {
 }
 
 .discoverPics {
-	max-width: 400px;
+    max-width: 400px;
 }
 
 .discoverImages:hover {
@@ -366,7 +386,7 @@ h2 {
     margin-right: 50px;
 }
 
-#chamberForm > * {
+#chamberForm>* {
     width: 100%;
     margin: 5px;
     justify-content: center;
@@ -376,6 +396,7 @@ h2 {
 #chamberForm label input {
     padding: 5px 10px;
 }
+
 #chamberForm input {
     padding: 5px 10px;
     margin: 5px;
@@ -388,13 +409,16 @@ h2 {
     box-shadow: 5px 10px 15px var(--secondary-color);
     margin: 15px 0px;
 }
+
 #membershipInfo p {
     text-align: center;
 }
-#membershipInfo > * {
+
+#membershipInfo>* {
     font-size: 0.8rem;
     text-align: left;
 }
+
 #membershipInfo span {
     font-weight: bold;
 }
@@ -404,7 +428,7 @@ h2 {
 /* banner message */
 
 #banner {
-    display: none; 
+    display: none;
     border: var(--accent-color) solid 3px;
     padding: 5px;
     text-align: center;

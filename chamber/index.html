@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,14 @@
     <meta property="og:title" content="JM | WDD230 Assignments | Bethany OR Chamber of Commerce Home">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jakem-byui.github.io/wdd230/">
-    <meta property="og:image" content="https://media.oregonlive.com/homes-rentals/photo/hr26bethany031jpg-2b5c03ad1c261e3a.jpg">
+    <meta property="og:image"
+        content="https://media.oregonlive.com/homes-rentals/photo/hr26bethany031jpg-2b5c03ad1c261e3a.jpg">
 </head>
+
 <body>
     <div id="banner">
-        <p>Attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m. <button id="closeBanner">❌</button></p>
+        <p>Attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m. <button id="closeBanner">❌</button>
+        </p>
     </div>
     <header>
         <img src="images/bethany-oregon-logo-removebg-preview.webp" alt="Bethany Oregon COC Logo">
@@ -34,7 +38,7 @@
     <nav>
         <button id="menu" title="hamburger menu"></button>
         <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="currentPage">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
@@ -42,31 +46,32 @@
     </nav>
     <div id="hero-banner">
         <picture id="hero-image">
-            <img 
-                srcset="
+            <img srcset="
                     images/bethany-hero-small.webp 400w,
                     images/bethany-hero-medium.webp 810w,
-                    images/bethany-hero-large.webp 960w"
-                sizes="
+                    images/bethany-hero-large.webp 960w" sizes="
                     (max-width: 400px) 400px,
                     (max-width: 810px) 810px,
-                    960px"
-                src="images/bethany-hero-large.webp" 
+                    960px" src="images/bethany-hero-large.webp"
                 alt="Picture of a street corner in Bethany, OR. Back drop website.">
         </picture>
         <a href="join.html" id="hero-call">Join the Chamber</a>
-    </div>   
+    </div>
     <main>
         <section id="eventsCard">
             <h3>Upcoming Events</h3>
-            <p>content content</p>
+            <ul>
+                <li>Open House<br>March 23</li>
+                <li>Free Yoga Class<br>March 23</li>
+                <li>Annual Easter Egg Hunt<br>March 30</li>
+            </ul>
         </section>
         <section id="weatherCard">
             <h3>Weather</h3>
             <p>
-                Temperature: <span id="temperature">49</span>° F | 
-                Wind Speed: <span id="wind-speed">5</span>mph | 
-                Wind Chill: <span id="wind-chill"></span> 
+                Temperature: <span id="temperature">49</span>° F<br>
+                Wind Speed: <span id="wind-speed">5</span>mph |
+                Wind Chill: <span id="wind-chill"></span>
             </p>
             <p>Bethany, Oregon - Temperature: <span id="current-temp"></span></p>
             <figure>
@@ -74,19 +79,9 @@
                 <figcaption></figcaption>
             </figure>
         </section>
-        <section id="spotlightCard">
-            <div class="spotlight">
-                <h3>Spotlight 1</h3>
-                <p>content content</p>
-            </div>
-            <div class="spotlight">
-                <h3>Spotlight 2</h3>
-                <p>content content</p>
-            </div>
-            <div class="spotlight">
-                <h3>Spotlight 3</h3>
-                <p>content content</p>
-            </div>
+        <section id="memberCard">
+            <h3>Spotlight on Gold & Silver Members</h3>
+            <div id="spotlightCard"></div>
         </section>
     </main>
     <footer>
@@ -97,17 +92,20 @@
                 <p>1000 Bethany Blvd<br>Bethany, OR 97229</p>
             </div>
             <div id="teleInfo">
-                <a href = "mailto:info@this_is_fake.org">info@bethany.org</a>
+                <a href="mailto:info@this_is_fake.org">info@bethany.org</a>
                 <p>(503) 555-5555</p>
             </div>
         </div>
-        <p>&copy;<span id="Year"></span> Bethany Chamber | Jake Matheson | WDD 230 Project<br><span id="lastModified"></span></p>
+        <p>&copy;<span id="Year"></span> Bethany Chamber | Jake Matheson | WDD 230 Project<br><span
+                id="lastModified"></span></p>
     </footer>
-    <script src="../scripts/getdates.js" ></script>
+    <script src="../scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
+
 </html>
