@@ -1,0 +1,79 @@
+:root {
+    /* CSS HEX */
+    --orange-crayola: #F3824Aff;
+    --indigo-dye: #094B65ff;
+    --space-cadet: #1F2243ff;
+    --dark-cyan: #209C9Bff;
+    --cosmic-latte: #FFF;
+
+    /* CSS HSL */
+    --orange-crayola: hsla(20, 88%, 62%, 1);
+    --indigo-dye: hsla(197, 84%, 22%, 1);
+    --space-cadet: hsla(235, 37%, 19%, 1);
+    --dark-cyan: hsla(180, 66%, 37%, 1);
+    --cosmic-latte: hsla(44, 69%, 94%, 1);
+
+
+    --paragraph-font: "Arial Narrow";
+}
+
+* {
+    /* Reset Some Stuff */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: var(--paragraph-font);
+}
+
+body {
+    background-color: var(--cosmic-latte);
+}
+
+header {
+    background-color: var(--orange-crayola);
+    color: white;
+    height: 50px;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--indigo-dye);
+    text-align: right;
+    padding-top: 50px;
+    padding-bottom: 500px;
+}
+li {
+    padding: 5px;
+}
+a {
+    margin: 5px;
+    color: white;
+}
+.active {
+    background-color: var(--cosmic-latte);
+    color: var(--space-cadet);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#wrapper {
+    grid-column: 2/5;
+}
+
+footer {
+    background-color: var(--orange-crayola);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
