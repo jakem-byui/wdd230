@@ -12,6 +12,7 @@
         <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c2/Southeast_Coast.jpg">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/scoots.css">
+        <link rel="stylesheet" href="styles/mobile.css">
         <link rel="icon" href="scoots.ico">
     </head>
 <body>
@@ -20,6 +21,7 @@
         <h1>~Scoots~</h1>
     </header>
     <main>
+        <button id="menu" title="hamburger menu"></button>
         <nav>
             <ul class="navigation">
                 <li class="active"><a href="index.html" class="active">
@@ -33,15 +35,64 @@
             </ul>
         </nav>
         <div id="wrapper">
-            <section>
-                <p>text</p>
+            <section id="callToRent">
+                <picture>
+                    <img src="images/rentalcall.webp" alt="Image of tourist on scooter in Cozumel." id="callToRentImg">
+                </picture>
+                <a href="">Book Your Scoots™️ Today!</a>
             </section>
-            <section>
-                <p>text 2</p>
+            <h2 class="segue">~Check Us Out Below!~</h2>
+            <section id="infoCards">
+                <div class="infoCard">
+                    <picture>
+                        <img src="images/scoots.webp" alt="">
+                    </picture>
+                    <h3>Rental Types</h3>
+                    <ul>
+                        <li> ~ Honda Motor Scooters</li>
+                        <li> ~ Side-by-Side ATVs</li>
+                        <li> ~ Jeeps</li>
+                    </ul>
+                    <a href="rentals.html">See more details...</a>
+                </div>
+                <div class="infoCard">
+                    <picture>
+                        <img src="images/contentpic1.webp" alt="">
+                    </picture>
+                    <h3>Find Us On Social Media</h3>
+                    <ul>
+                        <li><a href="https://facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="" class="socialLink">Scoots Cozumel</a></li>
+                        <li><a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="" class="socialLink">@scootsCozumel</a></li>
+                        <li><a href="https://twitter.com"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="" class="socialLink">@scootsCozumel</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="infoCard" id="weatherCard">
+                    <picture>
+                        <img src="images/contentpic6.webp" alt="">
+                    </picture>
+                    <h3>Current Weather</h3>
+                    <p>Cozumel, Mexico - Temperature: <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
             </section>
         </div>
     </main>
     <footer>
+        <div id="contactInfo">
+            <img src="images/scoots_logo_v2-removebg-preview.webp" alt="Bethany Oregon COC Logo">
+            <div id="addressInfo">
+                <p>~Scoots~<br>Contact Info</p>
+                <p>Av Lic Benito Juárez ###<br>Centro, 77600 Cozumel, Q.R., Mexico</p>
+            </div>
+            <div id="teleInfo">
+                <a href="mailto:info@this_is_fake.org">info@scoots.com.mx</a>
+                <p>+52 555 555 5555</p>
+            </div>
+        </div>
         <p>&copy;<span id="Year"></span> | Jake Matheson | Portland, OR, USA</p>
         <p id="lastModified"></p>
     </footer>

@@ -1,0 +1,55 @@
+@media (max-width: 35em) {
+
+    button#menu {
+        display: block;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: white;
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+        display: block;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "X";
+    }
+    
+    .navigation {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+
+
+    #contactInfo {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+}

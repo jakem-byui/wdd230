@@ -7,11 +7,11 @@
     --cosmic-latte: #FFF;
 
     /* CSS HSL */
-    --orange-crayola: hsla(20, 88%, 62%, 1);
-    --indigo-dye: hsla(197, 84%, 22%, 1);
-    --space-cadet: hsla(235, 37%, 19%, 1);
-    --dark-cyan: hsla(180, 66%, 37%, 1);
-    --cosmic-latte: hsla(44, 69%, 94%, 1);
+    --orange-crayola-clear: hsla(20, 88%, 62%, .75);
+    --indigo-dye-clear: hsla(197, 84%, 22%, .75);
+    --space-cadet-clear: hsla(235, 37%, 19%, .75);
+    --dark-cyan-clear: hsla(180, 66%, 37%, .75);
+    --cosmic-latte-clear: rgba(250, 245, 229, .75);
 
 
     --paragraph-font: "Arial Narrow";
@@ -24,6 +24,11 @@
     padding: 0;
     font-size: 1.2rem;
     font-family: var(--paragraph-font);
+}
+img {
+    /* Reset Some Image Stuff */
+    width: 100%;
+    object-fit: cover;
 }
 
 body {
@@ -57,6 +62,7 @@ a {
     background-color: var(--cosmic-latte);
     color: var(--space-cadet);
     text-decoration: none;
+    font-weight: 700;
 }
 a:hover {
     text-decoration: none;
@@ -67,8 +73,13 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+button#menu {
+    display: none;
+}
+
 #wrapper {
     grid-column: 2/5;
+    margin: 1rem;
 }
 
 footer {
@@ -76,4 +87,113 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+
+/* Home Page */
+
+#callToRent {
+    display: grid;
+}
+
+#callToRent picture {
+    grid-column: 1/4;
+    grid-row: 1/5;
+}
+
+#callToRentImg {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    align-items: center;
+    box-shadow: 5px 10px 15px var(--space-cadet);
+}
+
+#callToRent a {
+    text-align: center;
+    color: var(--space-cadet);
+    background-color: var(--cosmic-latte-clear);
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: .5rem;
+    font-weight: 700;
+}
+
+
+.segue {
+    color: var(--cosmic-latte);
+    background-color: var(--indigo-dye);
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+
+#infoCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infoCard {
+    background-color: var(--dark-cyan);
+    color: var(--cosmic-latte);
+    margin: .5rem;
+    padding: 1rem .5rem;
+    width: 250px;
+    box-shadow: 5px 10px 15px var(--space-cadet);
+}
+
+.infoCard img {
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.infoCard h3 {
+    text-align: left;
+    padding: .25rem;
+    background-color: var(--indigo-dye);
+}
+
+
+.infoCard a {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    padding-left: 10px;
+}
+
+
+.socialLink {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+#weatherCard {
+    text-align: center;
+}
+#weather-icon {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+#contactInfo {
+    display: flex;
+    color: var(--cosmic-latte);
+}
+#contactInfo img{
+    margin: auto;
+    max-width: 150px;
+    height: auto;
+}
+#contactInfo #addressInfo{
+    margin: auto;
+}
+#addressInfo p {
+    font-size: smaller;
+}
+#contactInfo #teleInfo{
+    margin: auto;
+
 }

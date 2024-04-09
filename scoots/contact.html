@@ -12,13 +12,16 @@
         <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c2/Southeast_Coast.jpg">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/scoots.css">
+        <link rel="stylesheet" href="styles/mobile.css">
         <link rel="icon" href="scoots.ico">
     </head>
 <body>
+    <div class="banner"></div>
     <header>
         <h1>~Scoots~</h1>
     </header>
     <main>
+        <button id="menu" title="hamburger menu"></button>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">
@@ -31,16 +34,19 @@
                     Contact</a></li>
             </ul>
         </nav>
-        <div id="wrapper">
-            <section>
-
-            </section>
-            <section>
-
-            </section>
-        </div>
     </main>
     <footer>
+        <div id="contactInfo">
+            <img src="images/scoots_logo_v2-removebg-preview.webp" alt="Bethany Oregon COC Logo">
+            <div id="addressInfo">
+                <p>~Scoots~<br>Contact Info</p>
+                <p>Av Lic Benito Juárez ###<br>Centro, 77600 Cozumel, Q.R., Mexico</p>
+            </div>
+            <div id="teleInfo">
+                <a href="mailto:info@this_is_fake.org">info@scoots.com.mx</a>
+                <p>+52 555 555 5555</p>
+            </div>
+        </div>
         <p>&copy;<span id="Year"></span> | Jake Matheson | Portland, OR, USA</p>
         <p id="lastModified"></p>
     </footer>
