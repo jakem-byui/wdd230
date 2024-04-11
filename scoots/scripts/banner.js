@@ -1,8 +1,15 @@
+document.addEventListener("DOMContentLoaded", function() {
+
+    document.getElementById("banner").style.display = "block"; // Show the banner
+
+    document.getElementById("closeBanner").addEventListener("click", function() {
+        document.getElementById("banner").style.display = "none"; // Hide the banner when the close button is clicked
+    });
+});
+
 // Select the elements from HTML
-const currentTemp = document.querySelector('#current-temp');
-const currentHumidity = document.querySelector('#current-humidity');
-const weatherIcon = document.querySelector('#weather-icon');
-const weatherDescription = document.querySelector('figcaption');
+const bannerHigh = document.querySelector('#banner-high');
+
 
 async function getWeatherData() {
     // Fetch weather data from OpenWeatherMap API
@@ -23,19 +30,8 @@ const kelvinToFahrenheit = (kelvin) => {
 // Function to update HTML with weather data
 const updateWeather = (data) => {
     // Display current temperature in Fahrenheit
-    const currentTemperatureF = Math.round(kelvinToFahrenheit(data.main.temp));
-    currentTemp.textContent = `${currentTemperatureF}°F`;
-
-    // Display humidity
-    const currentHum = data.main.humidity;
-    currentHumidity.textContent = `${currentHum}%`;
-
-    // Display weather icon
-    const weatherIconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-    weatherIcon.src = weatherIconUrl;
-
-    // Display weather description
-    weatherDescription.textContent = data.weather[0].description;
+    const currentTemperatureF = Math.round(kelvinToFahrenheit(data.main.temp_max));
+    bannerHigh.textContent = `${currentTemperatureF}°F`;
 }
 
 // Call the function to get weather data when the page loads

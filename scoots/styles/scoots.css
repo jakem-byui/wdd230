@@ -12,7 +12,7 @@
     --space-cadet-clear: hsla(235, 37%, 19%, .75);
     --dark-cyan-clear: hsla(180, 66%, 37%, .75);
     --cosmic-latte-clear: rgba(250, 245, 229, .75);
-
+    --background-grey: #f9f9f9;
 
     --paragraph-font: "Arial Narrow";
 }
@@ -49,7 +49,7 @@ nav {
     background-color: var(--indigo-dye);
     text-align: right;
     padding-top: 50px;
-    padding-bottom: 500px;
+    grid-row: 1/4;
 }
 li {
     padding: 5px;
@@ -199,4 +199,131 @@ footer img {
 #contactInfo #teleInfo{
     margin: auto;
 
+}
+
+figure {
+    display: flex;
+}
+figure img {
+    margin: auto;
+}
+figcaption {
+    font-variant-caps: petite-caps;
+    margin: auto;
+}
+
+/* Rentals */
+
+#RentalTableWrapper {
+    display: grid;
+    grid-column: 2/5;
+    margin: 1rem;
+    overflow: scroll;
+}
+
+#rentalHeader {
+    grid-column: 2/5;
+    max-height: 50px;
+}
+
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+    grid-column: 1/6;
+}
+th, td {
+    border: 1px solid var(--background-grey);
+    text-align: left;
+    padding: 8px;
+    
+}
+th {
+    background-color: var(--indigo-dye);
+    color: var(--cosmic-latte);
+}
+
+#RentalCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-column: 2/5;
+    margin: 1rem;
+}
+
+#RentalCards .infoCard {
+    width: 400px;
+}
+
+/* Reservations */
+
+.containerForm {
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+  
+.rental-agreement,
+.reservation-form {
+    background-color: var(--background-grey);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Contact */
+
+#contactImage {
+    height: 200px;
+    width: 100%;
+}
+
+input, textarea {
+    max-width: 90%;
+}
+
+iframe {
+    max-width: 100%;
+    margin: .5rem 0rem;
+}
+
+#contactCard {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    text-align: center;
+}
+
+#locationCard {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    width: 100%;
+}
+#mapCard {
+    display: flex;
+    flex-grow: 1;
+}
+
+#moreInfoCard {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    width: 100%;
 }

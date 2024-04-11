@@ -13,3 +13,4 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("banner").style.display = "none"; // Hide the banner when the close button is clicked
     });
 });
+

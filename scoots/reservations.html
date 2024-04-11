@@ -34,10 +34,69 @@
                     Contact</a></li>
             </ul>
         </nav>
+
+        <section class="containerForm">
+            <div class="rental-agreement">
+                <h3>Rental Services and Agreements</h3>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
+            
+            <div class="reservation-form">
+                <h2>Reservation Form</h2>
+                <form>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="period">Period:</label>
+                    <select id="period" name="period" required>
+                    <option value="half-day">Half Day</option>
+                    <option value="full-day">Full Day</option>
+                    </select>
+                    
+                    <label for="rental-type">Rental Type:</label>
+                    <input type="text" id="rental-type" name="rental-type" required>
+                    
+                    <label for="number">Number:</label>
+                    <input type="number" id="number" name="number" min="1" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="home">Home State/Country:</label>
+                    <input type="text" id="home" name="home" required>
+                    
+                    <label for="cruise">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise" name="cruise">
+                    
+                    <label for="comments">Special Accommodations/Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div id="contactInfo">
-            <img src="images/scoots_logo_v2-removebg-preview.webp" alt="Bethany Oregon COC Logo">
+            <img src="images/scoots_logo_v2-removebg-preview.webp" alt="Scoots Logo">
             <div id="addressInfo">
                 <p>~Scoots~<br>Contact Info</p>
                 <p>Av Lic Benito Juárez ###<br>Centro, 77600 Cozumel, Q.R., Mexico</p>
