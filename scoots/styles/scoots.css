@@ -88,7 +88,9 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
+footer img {
+    filter: drop-shadow(5px 10px 15px var(--space-cadet));
+}
 
 /* Home Page */
 
@@ -107,6 +109,7 @@ footer {
     object-fit: cover;
     align-items: center;
     box-shadow: 5px 10px 15px var(--space-cadet);
+    
 }
 
 #callToRent a {
