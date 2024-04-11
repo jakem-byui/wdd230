@@ -94,6 +94,11 @@ footer img {
 
 /* Home Page */
 
+#banner {
+    background-color: var(--space-cadet);
+    color: var(--cosmic-latte);
+}
+
 #callToRent {
     display: grid;
 }
